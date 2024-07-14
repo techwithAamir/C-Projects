@@ -11,13 +11,9 @@ int main()
     int randomNumber = (rand() % 100) + 1;
     int no_of_guesses = 0;
     int guessed_number;
-
-    // Print the random number
-    // printf("Random Number: %d\n", randomNumber);
-
     do
     {
-        printf("Guess the number");
+        printf("Guess the number:");
         scanf("%d", &guessed_number);
         if(guessed_number>randomNumber){
             printf("Lower number please!\n");
